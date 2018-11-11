@@ -1,11 +1,21 @@
-''' Creates logger with filehandler for a given module.'''
+''' Logging functionality:
+    Checks for and creates logs directory if not extant;
+    Creates logger with filehandler for modules.'''
 import os
 import logging
 
-PATH  = os.path.abspath(__file__ + "/../../../logs")
+def log_path():
+    ''' Functionality: Checks to see if log directory exists
+        Returns: Logs directory path '''
+    if not os.path.exists(os.path.abspath("{}/../../../logs".format(__file__))):
+        os.makedirs(os.path.abspath("{}/../../../logs".format(__file__)))
 
-#Sets up Logging
+    return os.path.abspath("{}/../../../logs".format(__file__))
+
 def log_setup(logger_name):
+    '''Returns formatted logger for a module '''
+    #Return log directory path
+    PATH = log_path()
 
     # Create logger
     logger = logging.getLogger(logger_name)
