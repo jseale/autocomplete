@@ -1,4 +1,4 @@
-''' Tests load_data.LoadData'''
+''' Tests load_data.LoadData—may be better run as integration, rather than unit tests. '''
 import os
 import sys
 
