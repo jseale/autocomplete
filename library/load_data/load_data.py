@@ -11,7 +11,7 @@ sys.path.insert(0, "{}/library/".format(AUTOCOMPLETE))
 
 #Create logger for module
 from log_setup import log_setup as ls
-logger = ls.log_setup(__name__)
+logger = ls.log_setup('load_data')
 
 chat_data = "sample_conversations.json"
 
