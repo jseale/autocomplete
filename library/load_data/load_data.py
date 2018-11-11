@@ -13,7 +13,7 @@ sys.path.insert(0, "{}/library/".format(AUTOCOMPLETE))
 from log_setup import log_setup as ls
 logger = ls.log_setup(__name__)
 
-#chat_data = "sample_conversations.json"
+chat_data = "sample_conversations.json"
 
 class LoadData():
     '''
