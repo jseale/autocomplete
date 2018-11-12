@@ -13,8 +13,7 @@ For more information on Conda, see: https://conda.io/docs/
 ```
 git clone https://github.com/jseale/asapp_autocomplete.git
 ```
-
-Create the environment and install dependencies into it by issuing: <br /> 
+Create environment and install dependencies into it by issuing: <br /> 
 ```
 cd asapp_autocomplete
 conda env create -f environment.yml
@@ -35,11 +34,13 @@ The challenge writeup is found in: <br/>
 asapp_autocomplete\documents
 ```
 
-To view the challenge writeup, cd to `documents`, issue the following
+To view the challenge writeup, cd to `documents`, issue the following, 
 and view `writeup.ipynb` in your browser. <br />
 ```
 jupyter notebook
 ```
+The above works if you are running this code locally. If the code is on a remote host, 
+port forwarding will allow you to view the notebook. 
 
 Choose the `autocomplete` kernel to run code in the notebook.
 
@@ -54,6 +55,3 @@ To run tests, cd to `asapp_autocomplete` directory, and issue: <br />
 ```
 pytest
 ```
-
-
-
