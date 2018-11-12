@@ -26,26 +26,29 @@ conda activate autocomplete
 ## Usage 
 
 ## Documentation
+
 The challenge writeup is found in: <br/>
 ```
 asapp_autocomplete\documents
 ```
 
-To view the challenge writeup, cd to `documents` issue the following
+To view the challenge writeup, cd to `documents`, issue the following
 and view `writeup.ipynb` in your browser. <br />
 ```
 jupyter notebook
 ```
+
+Choose the `autocomplete` kernel to run code in the notebook.
 
 If the autocomplete environment does not appear as a kernel in the notebook, issue the following
 while the environment is activated:<br />
 ```
 python -m ipykernel install --user --name autocomplete --display-name "autocomplete"
 ```
-Choose the `autocomplete` kernel to run code in the notebook.
 
 ## Tests
 To run tests, cd to `asapp_autocomplete` directory, and issue: <br />
 ```
 pytest
 ```
+
