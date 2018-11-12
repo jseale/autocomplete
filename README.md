@@ -6,8 +6,8 @@ This library exists as something of a 'Hello ASAPP' from Jen Seale. It is a resp
 ## Dependencies 
 Conda 4.5.11<br />
 
-Conda will be used to install further dependencies, including Python 3.7.1. See Installation section.<br />
-For more information on Conda, see: https://conda.io/docs/
+_Conda will be used to install further dependencies, including Python 3.7.1. See Installation section.<br />
+For more information on Conda, see: https://conda.io/docs/_
 
 ## Installation 
 ```
@@ -31,7 +31,7 @@ conda activate autocomplete
 
 The challenge writeup is found in: <br/>
 ```
-asapp_autocomplete\documents
+asapp_autocomplete/documents
 ```
 
 To view the challenge writeup, cd to `documents`, issue the following, 
@@ -42,6 +42,7 @@ jupyter notebook
 The above works if you are running this code locally. If the code is on a remote host, 
 port forwarding will allow you to view the notebook. 
 
+### writeup.ipynb
 Choose the `autocomplete` kernel to run code in the notebook.
 
 If the autocomplete environment does not appear as a kernel in the notebook, issue the following
@@ -55,3 +56,4 @@ To run tests, cd to `asapp_autocomplete` directory, and issue: <br />
 ```
 pytest
 ```
+
