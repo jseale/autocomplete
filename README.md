@@ -37,18 +37,15 @@ and view `writeup.ipynb` in your browser. <br />
 jupyter notebook
 ```
 
-If the autocomplete environment does not appear as a kernal in the notebook, issue the following
+If the autocomplete environment does not appear as a kernel in the notebook, issue the following
 while the environment is activated:<br />
 ```
 python -m ipykernel install --user --name autocomplete --display-name "autocomplete"
 ```
-
+Choose the `autocomplete` kernel to run code in the notebook.
 
 ## Tests
 To run tests, cd to `asapp_autocomplete` directory, and issue: <br />
 ```
 pytest
 ```
-
-
-
