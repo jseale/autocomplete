@@ -31,10 +31,10 @@ conda activate autocomplete
 
 The challenge writeup is found in: <br/>
 ```
-asapp_autocomplete/documents
+asapp_autocomplete/docs
 ```
 
-To view the challenge writeup, cd to `documents`, issue the following, 
+To view the challenge writeup, cd to `docs`, issue the following, 
 and view `writeup.ipynb` in your browser. <br />
 ```
 jupyter notebook
