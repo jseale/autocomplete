@@ -1,3 +1,5 @@
+[![Maintainability](https://api.codeclimate.com/v1/badges/a032938fea133db21c0d/maintainability)](https://codeclimate.com/repos/5beb899a714428026d005548/maintainability)
+
 # asapp_autocomplete 
 
 ## Motivation 
