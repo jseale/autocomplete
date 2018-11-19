@@ -1,19 +1,37 @@
 """ Template for autocomplete server, you probably won't need to edit anything in this file. """
-
+import os
+import sys
 from flask import Flask, request, jsonify
-import autocompleter
+
+#Get package prefix; insert autocomplete on path for import
+AUTOC = os.path.abspath(__file__ + "/../../../")
+sys.path.insert(0, "{}/library".format(AUTOC))
+from autocomplete import autocompleter
+from log_setup import log_setup
+logger = log_setup('server')
 
 app = Flask(__name__)
 
+#TO DO: Encode text as string, not bytes throughout code
+#to avoid decoding here for jsonify.
 @app.route('/autocomplete')
 def autocomplete():
     """ Generate autocompletions given the query 'q' """
-    q = request.args.get('q')
-    completions = my_autocompleter.generate_completions(q)
-    return jsonify({"Completions": completions})
+    try:
+        q = request.args.get('q')
+    except Exception as e:
+        logger.exception(str(e))
+    try:
+        completions = my_autocompleter.generate_completions(q)
+    except Exception as e:
+        logger.exception(str(e))
+    try:
+        completions_converted = \
+                [completion.decode("utf-8") for completion in completions]
+        return jsonify({"Completions": completions_converted})
+    except Exception as e:
+        logger.exception(str(e))
 
 if __name__ == "__main__":
     my_autocompleter = autocompleter.Autocompleter()
-    my_autocompleter.import_json("sample_conversations.json")
-
     app.run()
