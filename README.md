@@ -13,7 +13,7 @@ For more information on Conda, see: https://conda.io/docs/_
 ```
 git clone https://github.com/jseale/asapp_autocomplete.git
 ```
-Create environment and install dependencies into it by issuing: <br /> 
+Create the `autocomplete` environment and install dependencies into it by issuing: <br /> 
 ```
 cd asapp_autocomplete
 conda env create -f environment.yml
@@ -23,7 +23,6 @@ To activate the environment:<br />
 ```
 conda activate autocomplete
 ```
-
 
 ## Usage 
 
@@ -35,12 +34,15 @@ asapp_autocomplete/docs
 ```
 
 To view the challenge writeup, cd to `docs`, issue the following, 
-and view `writeup.ipynb` in your browser. <br />
+and view `challenge_writeup.ipynb` in your browser. <br />
 ```
 jupyter notebook
 ```
 The above works if you are running this code locally. If the code is on a remote host, 
 port forwarding will allow you to view the notebook. 
+
+
+The spaCy language model (en_core_web_lg) used in this work is described [here](https://github.com/explosion/spacy-models/releases//tag/en_core_web_lg-2.0.0).
 
 ### writeup.ipynb
 Choose the `autocomplete` kernel to run code in the notebook.
@@ -52,7 +54,7 @@ python -m ipykernel install --user --name autocomplete --display-name "autocompl
 ```
 
 ## Tests
-To run tests, cd to `asapp_autocomplete` directory, and issue: <br />
+To run tests, cd to the `asapp_autocomplete` directory, and issue: <br />
 ```
 pytest
 ```
