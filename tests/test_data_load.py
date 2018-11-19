@@ -11,8 +11,8 @@ sys.path.insert(0, "{}/library/data_load".format(AUTOC))
 @pytest.fixture(scope="module")
 def chats():
     '''Returns DataLoad instance '''
-    from data_load import DataLoad
-    return DataLoad()
+    from data_load import data_load
+    return data_load.DataLoad()
 
 def test_data_path(chats):
     ''' Asserts that instance of DataLoad has attribute path '''
