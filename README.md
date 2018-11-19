@@ -34,7 +34,6 @@ The challenge writeup is found in: <br/>
 ```
 asapp_autocomplete/docs
 ```
-
 To view the challenge writeup, cd to `docs`, issue the following, 
 and view `challenge_writeup.ipynb` in your browser. <br />
 ```
@@ -43,7 +42,7 @@ jupyter notebook
 The above works if you are running this code locally. If the code is on a remote host, 
 port forwarding will allow you to view the notebook. 
 
-### writeup.ipynb
+### challenge_writeup.ipynb
 Choose the `autocomplete` kernel to run code in the notebook.
 
 If the autocomplete environment does not appear as a kernel in the notebook, issue the following
