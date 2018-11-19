@@ -72,7 +72,7 @@ class Autocompleter():
     __get_messages = get_messages
 
     def top_messages(self, completions, number=1):
-        """ Parameters: List if completions obtained in generate_completions,
+        """ Parameters: List of completions obtained in generate_completions,
         and the number of completions you want to return.
         Counts the number of times each message occurs and returns n most
         frequent messages. This should provide a better autocomplete service
@@ -87,8 +87,7 @@ class Autocompleter():
 
     def prioritize(self, completions):
         """ Parameter: Completions obtained in generate_completions
-        Creates inverse index of prefix matches (completions) and
-        returns list of up to the top n most common as defined
+        Returns list of up to the top n most common as defined
         by self.cutoff. """
         if len(completions) == 0:
             return completions
