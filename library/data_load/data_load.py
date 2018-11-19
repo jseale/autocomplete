@@ -25,13 +25,13 @@ class DataLoad():
 
     def __init__(self):
         logger.info("Creating instance of DataLoad")
-        self.__path = f"{AUTOC}/data/{chat_data}"
+        self.path = f"{AUTOC}/data/{chat_data}"
         self.__json_load()
 
     def json_load(self):
         """ Loads json into json attribute of a DataLoad instance. """
         try:
-            with open(self.__path) as f:
+            with open(self.path) as f:
                 try:
                     self.json = json.load(f)
                     logger.info("Loading json")
