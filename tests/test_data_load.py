@@ -4,11 +4,9 @@ import os
 import sys
 import pytest
 
-#Package path
-AUTOCOMPLETE = os.path.abspath(__file__ + "/../../")
-
-# Insert library path to import log_setup
-sys.path.insert(0, "{}/library/data_load".format(AUTOCOMPLETE))
+#Prefix, data_load path insertion for import
+AUTOC = os.path.abspath(__file__ + "/../../")
+sys.path.insert(0, "{}/library/data_load".format(AUTOC))
 
 @pytest.fixture(scope="module")
 def chats():
