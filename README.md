@@ -43,9 +43,6 @@ jupyter notebook
 The above works if you are running this code locally. If the code is on a remote host, 
 port forwarding will allow you to view the notebook. 
 
-
-The spaCy language model (en_core_web_lg) used in this work is described [here](https://github.com/explosion/spacy-models/releases//tag/en_core_web_lg-2.0.0).
-
 ### writeup.ipynb
 Choose the `autocomplete` kernel to run code in the notebook.
 
