@@ -11,7 +11,7 @@ import autocompleter as a
 
 def test_prefix():
     """ Asserts that prefix.compiled is a regex pattern. """
-    prefix = a.Prefix("£®🚴")
+    prefix = a.Prefix("κόσμε")
     assert isinstance(prefix.compiled, re.Pattern)
 
 def test_autocompleter():
