@@ -32,8 +32,6 @@ to activate the server. `autocomplete_server.py` is found in `autocomplete/libra
 Query the server with curl commands such as this: 
 ```curl localhost:5000/autocomplete?q=what+is+your```
 
-Or enter your query in cell 21 of `challenge_writeup.ipynb`.
-
 
 ## Tests
 To run tests, cd to the `autocomplete` directory, and issue: <br />
