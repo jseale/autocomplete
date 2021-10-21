@@ -1,10 +1,10 @@
 [![Maintainability](https://api.codeclimate.com/v1/badges/a032938fea133db21c0d/maintainability)](https://codeclimate.com/repos/5beb899a714428026d005548/maintainability)
 
-# asapp_autocomplete 
-The asapp_autocomplete library provides functionality to run a server that allows for queries of user-generated text strings (prefixes) and returns up to five autocompletions. Ranking of autocompletions is based on the frequency of customer service representative-generated message instances in a corpus of chat messages with customers.
+# autocomplete 
+The autocomplete library provides functionality to run a server that allows for queries of user-generated text strings (prefixes) and returns up to five autocompletions. Ranking of autocompletions is based on the frequency of agent-generated message instances in a corpus of chat messages.
 
 ## Motivation 
-This library exists as something of a 'Hello ASAPP' from Jen Seale. It is a response to the coding challenge provided as part of the hiring process for the position of [Machine Learning Engineer](https://jobs.lever.co/asapp-2/20112e96-2c3b-41e7-a602-61edb8e998b7).
+This library exists as a response to a coding challenge.
 
 ## Dependencies 
 Conda 4.5.11<br />
@@ -14,11 +14,11 @@ For more information on Conda, see: https://conda.io/docs/_
 
 ## Installation 
 ```
-git clone https://github.com/jseale/asapp_autocomplete.git
+git clone https://github.com/jseale/autocomplete.git
 ```
 Create the `autocomplete` environment and install dependencies into it by issuing: <br /> 
 ```
-cd asapp_autocomplete
+cd autocomplete
 conda env create -f environment.yml
 ```
 
@@ -32,7 +32,7 @@ After activating the environment, issue:
 ```
 ipython autocomplete_server.py
 ```
-to activate the server. `autocomplete_server.py` is found in `asapp_autocomplete/library/server`.
+to activate the server. `autocomplete_server.py` is found in `autocomplete/library/server`.
 
 Query the server with curl commands such as this: 
 ```curl localhost:5000/autocomplete?q=what+is+your```
@@ -42,7 +42,7 @@ Or enter your query in cell 21 of `challenge_writeup.ipynb`.
 ## Documentation
 The challenge writeup is found in: <br/>
 ```
-asapp_autocomplete/docs
+autocomplete/docs
 ```
 To view the challenge writeup, cd to `docs`, issue the following, 
 and view `challenge_writeup.ipynb` in your browser. <br />
@@ -62,7 +62,7 @@ python -m ipykernel install --user --name autocomplete --display-name "autocompl
 ```
 
 ## Tests
-To run tests, cd to the `asapp_autocomplete` directory, and issue: <br />
+To run tests, cd to the `autocomplete` directory, and issue: <br />
 ```
 pytest
 ```
