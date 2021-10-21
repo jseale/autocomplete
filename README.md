@@ -1,5 +1,5 @@
 # autocomplete 
-The autocomplete library provides functionality to run a server that allows for queries of user-generated text strings (prefixes) and returns up to five autocompletions. Ranking of autocompletions is based on the frequency of agent-generated message instances in a corpus of chat messages.
+The autocomplete library provides functionality to run a server that allows for queries of user-generated text strings (prefixes) and returns up to five autocompletions. Ranking of autocompletions is based on the frequency of agent-generated message instances in a corpus of chat messages. The chat message data is not available in this repo.
 
 ## Dependencies 
 Conda 4.5.11<br />
@@ -34,27 +34,6 @@ Query the server with curl commands such as this:
 
 Or enter your query in cell 21 of `challenge_writeup.ipynb`.
 
-## Documentation
-The challenge writeup is found in: <br/>
-```
-autocomplete/docs
-```
-To view the challenge writeup, cd to `docs`, issue the following, 
-and view `challenge_writeup.ipynb` in your browser. <br />
-```
-jupyter notebook
-```
-The above works if you are running this code locally. If the code is on a remote host, 
-port forwarding will allow you to view the notebook. 
-
-### challenge_writeup.ipynb
-Choose the `autocomplete` kernel to run code in the notebook.
-
-If the autocomplete environment does not appear as a kernel in the notebook, issue the following
-while the environment is activated:<br />
-```
-python -m ipykernel install --user --name autocomplete --display-name "autocomplete"
-```
 
 ## Tests
 To run tests, cd to the `autocomplete` directory, and issue: <br />
