@@ -1,5 +1,5 @@
 # autocomplete 
-The autocomplete library provides functionality to run a server that allows for queries of user-generated text strings (prefixes) and returns up to five autocompletions. Ranking of autocompletions is based on the frequency of agent-generated message instances in a corpus of chat messages. The chat message data is not available in this repo.
+The autocomplete library provides functionality to run a server that allows for queries of user-generated text strings (prefixes) and returns up to five autocompletions. Ranking of autocompletions is based on the frequency of agent-generated message instances in a corpus of chat messages. The chat message data and the server code are not available in this repo.
 
 ## Dependencies 
 Conda 4.5.11<br />
