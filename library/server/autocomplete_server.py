@@ -1,4 +1,4 @@
-""" Template for autocomplete server, you probably won't need to edit anything in this file. """
+""" Template for autocomplete server. """
 import os
 import sys
 from flask import Flask, request, jsonify
