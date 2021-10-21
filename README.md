@@ -1,5 +1,3 @@
-[![Maintainability](https://api.codeclimate.com/v1/badges/a032938fea133db21c0d/maintainability)](https://codeclimate.com/repos/5beb899a714428026d005548/maintainability)
-
 # autocomplete 
 The autocomplete library provides functionality to run a server that allows for queries of user-generated text strings (prefixes) and returns up to five autocompletions. Ranking of autocompletions is based on the frequency of agent-generated message instances in a corpus of chat messages.
 
