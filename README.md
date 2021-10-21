@@ -23,18 +23,18 @@ conda activate autocomplete
 ```
 
 ## Usage 
-After activating the environment, issue: 
+After activating the environment, were the server available, you would issue the following commmand: 
 ```
 ipython autocomplete_server.py
 ```
-to activate the server. `autocomplete_server.py` is found in `autocomplete/library/server`.
+to activate the server. 
 
-Query the server with curl commands such as this: 
+You would then query the server with curl commands such as this: 
 ```curl localhost:5000/autocomplete?q=what+is+your```
 
 
 ## Tests
-To run tests, cd to the `autocomplete` directory, and issue: <br />
+To run tests, you would cd to the `autocomplete` directory, and issue: <br />
 ```
 pytest
 ```
